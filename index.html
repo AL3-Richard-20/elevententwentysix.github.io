@@ -1,0 +1,266 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/style.css" rel="stylesheet">
+    <title>Eleven Ten Twenty-Six</title>
+    <script src="https://cdn.jsdelivr.net/npm/@hiseb/confetti@2.2.0/dist/confetti.min.js"></script>
+  </head>
+
+  <body>
+
+    <div id="main_container" class="p-0 m-0 h-full">
+
+      <!-- ============ Home Screen ========= -->
+        <div 
+          id="home_screen" 
+          class="flex items-center justify-center flex-col h-screen p-4">
+
+          <!-- <h1 class="text-7xl mb-7">💏</h1>
+
+          <h1 class="text-4xl font-bold uppercase mb-7">Hello </h1> -->
+
+          <button 
+            type="button" 
+            class="font-bold uppercase p-3 bg-violet-700 text-white rounded-md w-full animate-bouncing animate-duration-1000 animate-iteration-count-infinite animate-fill-mode-both" 
+            onclick="hideShow('home_screen', 'minigame_screen')">
+            Start
+          </button>
+
+        </div>
+      <!-- ============ Home Screen END ===== -->
+
+     <!-- ============= Make Richard Smile =========== -->
+        <div 
+          id="minigame_screen" 
+          class="flex items-center justify-center flex-col h-screen p-4 text-center bg-linear-to-r from-cyan-500 to-blue-800" style="display:none;">
+
+          <h1 class="text-7xl">
+            <img src="/assets/1_Normal-removebg-preview.png" id="normal_chad_pic" alt="">
+            <img src="/assets/2_Blushed-removebg-preview.png" id="blushed_chad_pic" style="display:none" alt="">
+            <img src="/assets/2_Blushed-Heart-removebg-preview.png" id="blushed_heart_chad_pic" style="display:none" alt="">
+          </h1>
+
+          <p class="text-2xl mt-7 mb-7 text-white" id="minigame_header_txt">Make me blush bb ko</p>
+
+          <div class="flex items-center w-full flex-row flex-wrap justify-center" id="action_btns">
+            
+            <button 
+              type="button" 
+              class="text-4xl m-3 rounded-lg w-30 bg-white/2.5 border border-white/50 backdrop-blur-sm shadow-[inset_0_1px_0px_rgba(255,255,255,0.75),0_0_9px_rgba(0,0,0,0.2),0_3px_8px_rgba(0,0,0,0.15)] hover:bg-white/30 transition-all duration-300 before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-white/60 before:via-transparent before:to-transparent before:opacity-70 before:pointer-events-none after:absolute after:inset-0 after:rounded-lg after:bg-gradient-to-tl after:from-white/30 after:via-transparent after:to-transparent after:opacity-50 after:pointer-events-none transition antialiased animate-jiggle animate-duration-1000 animate-iteration-count-infinite" 
+              onclick="makeSmile('kiss')">
+              😘
+            </button>
+            <button 
+              type="button" 
+              class="text-4xl m-3 rounded-lg w-30 bg-white/2.5 border border-white/50 backdrop-blur-sm shadow-[inset_0_1px_0px_rgba(255,255,255,0.75),0_0_9px_rgba(0,0,0,0.2),0_3px_8px_rgba(0,0,0,0.15)] hover:bg-white/30 transition-all duration-300 before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-white/60 before:via-transparent before:to-transparent before:opacity-70 before:pointer-events-none after:absolute after:inset-0 after:rounded-lg after:bg-gradient-to-tl after:from-white/30 after:via-transparent after:to-transparent after:opacity-50 after:pointer-events-none transition antialiased animate-jiggle animate-duration-1000 animate-iteration-count-infinite" 
+              onclick="makeSmile('poke')">
+              👆
+            </button>
+            <button 
+              type="button" 
+              class="text-4xl m-3 rounded-lg w-30 bg-white/2.5 border border-white/50 backdrop-blur-sm shadow-[inset_0_1px_0px_rgba(255,255,255,0.75),0_0_9px_rgba(0,0,0,0.2),0_3px_8px_rgba(0,0,0,0.15)] hover:bg-white/30 transition-all duration-300 before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-white/60 before:via-transparent before:to-transparent before:opacity-70 before:pointer-events-none after:absolute after:inset-0 after:rounded-lg after:bg-gradient-to-tl after:from-white/30 after:via-transparent after:to-transparent after:opacity-50 after:pointer-events-none transition antialiased animate-jiggle animate-duration-1000 animate-iteration-count-infinite" 
+              onclick="makeSmile('punch')">
+              👊
+            </button>
+            <button 
+              type="button" 
+              class="text-4xl m-3 rounded-lg w-30 bg-white/2.5 border border-white/50 backdrop-blur-sm shadow-[inset_0_1px_0px_rgba(255,255,255,0.75),0_0_9px_rgba(0,0,0,0.2),0_3px_8px_rgba(0,0,0,0.15)] hover:bg-white/30 transition-all duration-300 before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-white/60 before:via-transparent before:to-transparent before:opacity-70 before:pointer-events-none after:absolute after:inset-0 after:rounded-lg after:bg-gradient-to-tl after:from-white/30 after:via-transparent after:to-transparent after:opacity-50 after:pointer-events-none transition antialiased animate-jiggle animate-duration-1000 animate-iteration-count-infinite" 
+              onclick="makeSmile('ghost')">
+              👻
+            </button>
+            <button 
+              type="button" 
+              class="text-4xl m-3 rounded-lg w-30 bg-white/2.5 border border-white/50 backdrop-blur-sm shadow-[inset_0_1px_0px_rgba(255,255,255,0.75),0_0_9px_rgba(0,0,0,0.2),0_3px_8px_rgba(0,0,0,0.15)] hover:bg-white/30 transition-all duration-300 before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-white/60 before:via-transparent before:to-transparent before:opacity-70 before:pointer-events-none after:absolute after:inset-0 after:rounded-lg after:bg-gradient-to-tl after:from-white/30 after:via-transparent after:to-transparent after:opacity-50 after:pointer-events-none transition antialiased animate-jiggle animate-duration-1000 animate-iteration-count-infinite" 
+              onclick="makeSmile('hug')">
+              💑
+            </button>
+
+          </div>
+
+          <button 
+            type="button" 
+            class="font-bold uppercase p-3 bg-violet-700 text-white rounded-md w-full animate-bouncing animate-duration-1000 animate-iteration-count-infinite animate-fill-mode-both" 
+            id="minigame_next_btn"
+            onclick="hideShow('minigame_screen', 'letter_screen')" 
+            style="display:none;">
+            Next
+          </button>
+
+          <div class="absolute">
+            <h1 id="yey" style="display: none;" class="text-3xl font-bold uppercase text-green-400 animate-tada">Yey!</h1>
+            <h1 id="no" style="display: none;" class="text-3xl font-bold uppercase text-red-400 animate-tada">No!</h1>
+          </div>
+
+
+        </div>
+     <!-- ============= Make Richard Smile END ======= -->
+
+     <!-- ============= Letter ============== -->
+      <div 
+        id="letter_screen" 
+        class="flex items-center justify-center flex-col h-screen p-4" style="display:none;">
+
+        <div id="ls_seq1">
+          <h1 
+            class="text-8xl animate-tada animate-duration-2000 animate-steps-modern animate-iteration-count-infinite animate-fill-mode-forwards cursor-pointer" 
+            onclick="hideShow('ls_seq1', 'ls_seq2')">✉</h1>
+          <p class="mt-4 font-semibold text-center text-gray-500 animate-fade-in animate-delay-2000 italic">Tap the envelope</p>
+        </div>
+
+        <div id="ls_seq2" style="display:none;">
+          <h1 
+            class="text-8xl animate-jump animate-duration-2000 animate-iteration-count-infinite cursor-pointer"
+            onclick="hideShow('ls_seq2', 'ls_seq3')">💌</h1>
+          <p class="mt-5 font-semibold text-gray-500 italic">Tap mo ulit bb ko</p>
+        </div>
+
+        <div id="ls_seq3" style="display:none;">
+
+          <div class="bg-[url(/assets/kb0Zm.jpg)] italic p-4 shadow-xl/30 animate-expand-vertically animate-steps-modern animate-fill-mode-both">
+
+            <div class="text-justify max-h-150 overflow-y-auto scrollbar-none">
+              
+              <p>To my sexy wifey Joshley Anne,</p>
+
+              <br>
+
+              <p>If you are reading this, ibig sabihin naaccomplish mo yung mini game ko hehehe. Ito nga palang mini website na ito ay ginawa ko during working hours and gusto ko talaga sya gawin for you. 
+              Since monthsary natin today, sasabihin ko dito yung mga hindi ko pa nasasabi sayo in person. First, I want you to be healthy, fit, and strong para matagal pa kitang makasama. 
+              Hindi ka pwedeng mamatay ng maaga ha. Mawawalan na ako ng will to live pag ganon haha. Iingatan mo rin sarili mo at magiging alisto ka sa paligid lalo na't hindi sa lahat ng oras mababantayan kita bb. 
+              Lakasan mo rin po loob mo at palakasin pa lalo ang EQ. Andito lang ako palagi to support you and love you with all my heart. 
+              May God bless our relationship and make us strong. Yun lang po and I LOVE YOU VERY VERY MUCH ALWAYS.</p>
+              
+              <br>
+
+              <p>Loving you genuinely since Aug 2025.</p>
+
+              <br>
+
+              <p>-Richard</p>
+            </div>
+
+            <p class="text-center mt-6 cursor-pointer" onclick="hideShow('letter_screen', 'gift_screen')">Tap here</p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+     <!-- ============= Letter END ========== -->
+
+     <!-- ============= Gift ========== -->
+      <div 
+        id="gift_screen" 
+        class="flex items-center justify-center text-center flex-col h-screen p-4" style="display:none;">
+
+        <h1 class="text-9xl animate-sway animate-duration-1000 animate-iteration-count-infinite bg-violet-500 p-8 rounded-full">❔</h1>
+        <h1 class="mt-6 text-3xl">You will receive an item</h1>
+        <p class="text-gray-700 mt-2 mb-7"><b>Clue:</b> Something that is not illegal and harmful to others.</p>
+
+        <p></p>
+
+        <button 
+          type="button" 
+          class="font-bold uppercase p-3 bg-violet-700 text-white rounded-md w-full animate-bouncing animate-duration-1000 animate-iteration-count-infinite animate-fill-mode-both" 
+          onclick="hideShow('gift_screen', 'closing_screen')">
+          Got It 👍
+        </button>
+
+      </div>
+     <!-- ============= Gift END ====== -->
+
+      <!-- ============ Closing Screen ======== -->
+       <div 
+        id="closing_screen" 
+        class="flex items-center justify-center flex-col h-screen p-4" style="display:none;">
+        <h1 class="text-5xl uppercase font-bold">Thank You!</h1>
+        <h1 class="text-7xl mt-4 animate-pulsing animate-duration-800 animate-iteration-count-infinite animate-fill-mode-both">❤</h1>
+       </div>
+      <!-- ============ Closing Screen END ==== -->
+
+    </div>
+
+    <script>
+
+      let emotion_meter = []
+
+      // Letter Functions 
+      function hideShow(hide, open){
+
+        document.getElementById(hide).setAttribute('style', 'display:none;')
+        document.getElementById(open).setAttribute('style', '')
+      }
+
+
+      function makeSmile(action){
+
+        emotion_meter.push(action)
+
+        let count_hug = emotion_meter.filter(x => x=='hug').length
+        let count_kiss = emotion_meter.filter(x => x=='kiss').length
+
+        if(action == 'poke' || action == 'punch' || action == 'ghost'){
+
+          emotion_meter = []
+
+          hideShow('blushed_chad_pic', 'normal_chad_pic')
+
+          document.getElementById('no').setAttribute('style', '')
+
+          setTimeout(function(){
+
+            document.getElementById('no').setAttribute('style', 'display:none;')
+
+          }, 1000)
+
+          document.getElementById('yey').setAttribute('style', 'display:none;')
+        }
+
+        if(action == 'kiss' || action == 'hug'){
+
+          document.getElementById('yey').setAttribute('style', '')
+
+          setTimeout(function(){
+
+            document.getElementById('yey').setAttribute('style', 'display:none;')
+
+          }, 1000)
+
+          document.getElementById('no').setAttribute('style', 'display:none;')
+        
+        }
+
+        if(count_kiss == 2 || count_hug >= 1){
+
+          hideShow('normal_chad_pic', 'blushed_chad_pic')
+        }
+
+
+        if(count_kiss >= 3 && count_hug >= 1){
+
+          hideShow('blushed_chad_pic', 'blushed_heart_chad_pic')
+
+          emotion_meter = []
+
+          hideShow('no', 'yey')
+          
+          confetti();
+
+          hideShow('action_btns', 'minigame_next_btn')
+
+          document.getElementById('minigame_header_txt').textContent='Happy na po ako bb!'
+        }
+
+        console.log(emotion_meter)
+      }
+
+    </script>
+
+  </body>
+
+</html>
