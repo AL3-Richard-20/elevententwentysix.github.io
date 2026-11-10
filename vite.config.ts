@@ -4,5 +4,5 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
-  base: '/eleven-ten-twentysix/'
+  base: '/elevententwentysix.github.io/'
 })
