@@ -17,11 +17,11 @@
       <!-- ============ Home Screen ========= -->
         <div 
           id="home_screen" 
-          class="flex items-center justify-center flex-col h-screen p-4">
+          class="flex items-center justify-center text-center flex-col h-screen p-4">
 
           <h1 class="text-7xl mb-7">💏</h1>
 
-          <h1 class="text-4xl font-bold uppercase mb-7">Hello bb! Welcome</h1>
+          <h1 class="text-4xl font-bold uppercase mb-7">Hello bb</h1>
 
           <button 
             type="button" 
@@ -107,14 +107,18 @@
         <div id="ls_seq1">
           <h1 
             class="text-8xl animate-tada animate-duration-2000 animate-steps-modern animate-iteration-count-infinite animate-fill-mode-forwards cursor-pointer" 
-            onclick="hideShow('ls_seq1', 'ls_seq2')">✉</h1>
+            onclick="hideShow('ls_seq1', 'ls_seq2')">
+            <img src="/assets/Envelope_icon-removebg-preview.png" alt="">
+          </h1>
           <p class="mt-4 font-semibold text-center text-gray-500 animate-fade-in animate-delay-2000 italic">Tap the envelope</p>
         </div>
 
         <div id="ls_seq2" style="display:none;">
           <h1 
             class="text-8xl animate-jump animate-duration-2000 animate-iteration-count-infinite cursor-pointer"
-            onclick="hideShow('ls_seq2', 'ls_seq3')">💌</h1>
+            onclick="hideShow('ls_seq2', 'ls_seq3')">
+            <img src="/assets/Envelope_icon2-removebg-preview.png" alt="">
+          </h1>
           <p class="mt-5 font-semibold text-gray-500 italic">Tap mo ulit bb ko</p>
         </div>
 
@@ -179,7 +183,9 @@
         id="closing_screen" 
         class="flex items-center justify-center flex-col h-screen p-4" style="display:none;">
         <h1 class="text-5xl uppercase font-bold">Thank You!</h1>
-        <h1 class="text-7xl mt-4 animate-pulsing animate-duration-800 animate-iteration-count-infinite animate-fill-mode-both">❤</h1>
+        <h1 class="text-7xl mt-4 animate-pulsing animate-duration-800 animate-iteration-count-infinite animate-fill-mode-both">
+          <img src="/assets/heart_9-removebg-preview.png" alt="">
+        </h1>
        </div>
       <!-- ============ Closing Screen END ==== -->
 
